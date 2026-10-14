@@ -1321,10 +1321,11 @@ ul {
 
 .membership-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 880px;
+  margin: 0 auto 2rem;
   gap: 2rem;
   align-items: stretch;
-  margin-bottom: 2rem;
 }
 
 .plan-card {

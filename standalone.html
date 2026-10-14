@@ -1337,10 +1337,11 @@ ul {
 
 .membership-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 880px;
+  margin: 0 auto 2rem;
   gap: 2rem;
   align-items: stretch;
-  margin-bottom: 2rem;
 }
 
 .plan-card {
@@ -2459,7 +2460,10 @@ textarea:focus {
           <span>Call: +91 91 5004 2088</span>
         </a>
         <span class="divider">|</span>
-        <span class="hours-tag">Mon - Sat: 5:30 AM - 10:30 PM</span>
+        <span class="hours-tag">Mon - Sat: MORNING: 5:30 AM - 10:00 AM
+          EVENING: 4:00 PM - 10:00 PM
+
+        </span>
       </div>
     </div>
   </aside>
@@ -2953,7 +2957,7 @@ textarea:focus {
               <p class="plan-desc">For motivated self-starters who need full access to premier gym equipment.</p>
               <div class="plan-price">
                 <span class="currency">₹</span>
-                <span class="amount" data-monthly="1,499" data-quarterly="3,999" data-annual="13,999">1,499</span>
+                <span class="amount" data-monthly="2,499" data-quarterly="3,999" data-annual="9,999">2,499</span>
                 <span class="period" data-monthly="/ month" data-quarterly="/ quarter" data-annual="/ year">/ month</span>
               </div>
               <span class="placeholder-note">*Editable placeholder fee</span>
@@ -2982,7 +2986,7 @@ textarea:focus {
               <p class="plan-desc">Our flagship package for dedicated lifters wanting structured guidance.</p>
               <div class="plan-price">
                 <span class="currency">₹</span>
-                <span class="amount" data-monthly="2,499" data-quarterly="6,499" data-annual="21,999">2,499</span>
+                <span class="amount" data-monthly="7,999" data-quarterly="21,499" data-annual="95,999">7,999</span>
                 <span class="period" data-monthly="/ month" data-quarterly="/ quarter" data-annual="/ year">/ month</span>
               </div>
               <span class="placeholder-note">*Editable placeholder fee</span>
@@ -2999,34 +3003,6 @@ textarea:focus {
             </div>
             <div class="plan-footer">
               <a href="#enquiry" class="btn btn-primary btn-block btn-glow btn-select-plan" data-plan="Pro">Join Pro</a>
-            </div>
-          </div>
-
-          <!-- Plan 3: ELITE -->
-          <div class="plan-card">
-            <div class="plan-header">
-              <span class="plan-tier">TIER 03</span>
-              <h3 class="plan-name">ELITE</h3>
-              <p class="plan-desc">The ultimate transformation program with direct hands-on coach supervision.</p>
-              <div class="plan-price">
-                <span class="currency">₹</span>
-                <span class="amount" data-monthly="4,499" data-quarterly="11,999" data-annual="39,999">4,499</span>
-                <span class="period" data-monthly="/ month" data-quarterly="/ quarter" data-annual="/ year">/ month</span>
-              </div>
-              <span class="placeholder-note">*Editable placeholder fee</span>
-            </div>
-            <div class="plan-features">
-              <ul>
-                <li><span class="check">✓</span> Everything in <strong>Pro</strong> plan</li>
-                <li><span class="check">✓</span> <strong>Personal Training Sessions</strong> included</li>
-                <li><span class="check">✓</span> Weekly 1-on-1 technique & form audit</li>
-                <li><span class="check">✓</span> Precision macronutrient diet programming</li>
-                <li><span class="check">✓</span> Priority WhatsApp direct support with coaches</li>
-                <li><span class="check">✓</span> Beast merchandise welcome kit</li>
-              </ul>
-            </div>
-            <div class="plan-footer">
-              <a href="#enquiry" class="btn btn-outline btn-block btn-select-plan" data-plan="Elite">Join Elite</a>
             </div>
           </div>
         </div>
@@ -3172,7 +3148,7 @@ textarea:focus {
                     <option value="" disabled selected>Select a plan...</option>
                     <option value="Basic">BASIC (Gym Floor Access)</option>
                     <option value="Pro">PRO (Gym + Functional + Coaching Routine)</option>
-                    <option value="Elite">ELITE (VIP Access + 1-on-1 Sessions)</option>
+  
                     <option value="Personal Training Only">Personal Training Inquiry</option>
                   </select>
                 </div>
