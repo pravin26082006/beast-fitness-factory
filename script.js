@@ -1,5 +1,5 @@
 /**
- * BEAST FITNESS FACTOR - INTERACTIVE SCRIPT
+ * BEAST FITNESS FACTORY - INTERACTIVE SCRIPT
  * Author: Antigravity AI
  * Features: Sticky nav, mobile drawer, scroll spy, pricing switcher,
  *           programs modal, gallery filters, lightbox viewer, BMI calculator,
@@ -20,7 +20,7 @@ function initAll() {
     initBMICalculator();
     initEnquiryForm();
     initAutoYear();
-    console.log("Beast Fitness Factor scripts successfully initialized.");
+    console.log("Beast Fitness Factory scripts successfully initialized.");
   } catch (err) {
     console.error("Initialization error:", err);
   }
@@ -600,7 +600,7 @@ function initEnquiryForm() {
 
       const data = getFormData();
       const rawMessage = 
-`🏋️ *BEAST FITNESS FACTOR - GYM ENQUIRY*
+`🏋️ *BEAST FITNESS FACTORY - GYM ENQUIRY*
 ━━━━━━━━━━━━━━━━━━━━
 👤 *Name:* ${data.name}
 📱 *Phone:* ${data.phone}

@@ -1,12 +1,12 @@
 #!/bin/bash
 # -------------------------------------------------------------
-# BEAST FITNESS FACTOR - 1-Click Launch Script for macOS
+# BEAST FITNESS FACTORY - 1-Click Launch Script for macOS
 # -------------------------------------------------------------
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd "$DIR"
 
 echo "================================================================"
-echo " 🏋️  LAUNCHING BEAST FITNESS FACTOR WEBSITE"
+echo " 🏋️  LAUNCHING BEAST FITNESS FACTORY WEBSITE"
 echo "================================================================"
 echo ""
 echo "Opening website in your default browser..."
