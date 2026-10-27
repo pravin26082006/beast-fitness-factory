@@ -560,7 +560,7 @@ function initEnquiryForm() {
     };
   }
 
-  // Form Submit Handler (Demo Submission)
+  // Form Submit Handler
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -632,7 +632,7 @@ Hi Coach Gowtham & Coach Srinath, I would like to schedule a visit and start tra
   if (feedbackBackdrop) feedbackBackdrop.addEventListener("click", closeFeedback);
 }
 
-// Helper: Escape HTML to avoid injection in demo modal
+// Helper: Escape HTML before inserting form data into the feedback modal
 function escapeHTML(str) {
   return str.replace(/[&<>'"]/g, 
     tag => ({

@@ -3196,7 +3196,7 @@ textarea:focus {
             <!-- Form Action Buttons -->
             <div class="enquiry-actions">
               <button type="submit" class="btn btn-primary btn-large btn-glow" id="btn-submit-form">
-                <span>Submit Enquiry (Demo)</span>
+                <span>Submit Enquiry</span>
               </button>
               
               <button type="button" class="btn btn-whatsapp btn-large" id="btn-whatsapp-enquiry">
@@ -3207,7 +3207,7 @@ textarea:focus {
 
             <!-- Transparency Disclaimer -->
             <p class="form-disclaimer">
-              🔒 <strong>Demo Notice:</strong> This initial version is set up with instant WhatsApp forwarding or client-side demo validation. No real messages are dispatched to an external server unless configured with your backend endpoint.
+              🔒 <strong>Notice:</strong> Form submissions show an on-page confirmation only. To send your enquiry to our team, use WhatsApp or configure a backend endpoint.
             </p>
           </form>
         </div>
@@ -3456,7 +3456,7 @@ textarea:focus {
         </div>
         <h3 id="feedback-title">Enquiry Received!</h3>
         <p id="feedback-message" class="feedback-text">
-          Thank you for taking the first step. This is a local demo confirmation verifying all input fields.
+          Thank you for taking the first step. Your details are shown in this confirmation only. To send your enquiry to our team, choose Send via WhatsApp.
         </p>
         <div class="feedback-summary" id="feedback-summary"></div>
         <div class="modal-actions">
@@ -4030,7 +4030,7 @@ function initEnquiryForm() {
     };
   }
 
-  // Form Submit Handler (Demo Submission)
+  // Form Submit Handler
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -4102,7 +4102,7 @@ Hi Coach Gowtham & Coach Srinath, I would like to schedule a visit and start tra
   if (feedbackBackdrop) feedbackBackdrop.addEventListener("click", closeFeedback);
 }
 
-// Helper: Escape HTML to avoid injection in demo modal
+// Helper: Escape HTML before inserting form data into the feedback modal
 function escapeHTML(str) {
   return str.replace(/[&<>'"]/g, 
     tag => ({
